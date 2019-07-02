@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Container from '@material-ui/core/Container';
 import AppBar from '@material-ui/core/AppBar';
+import Grid from '@material-ui/core/Grid';
+
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
@@ -27,7 +29,7 @@ class HomePage extends Component {
 
 
       return (
-        <div style={{height:'100%', width:'100%'}}>
+        <Grid style={{height:'100%', width:'100%'}}>
         <AppBar position="static" style={{textAlign: 'center', height:'100%', backgroundColor:"#005b96"}}>
         <Toolbar>
         <Typography variant="h6">College drunk.</Typography>
@@ -47,7 +49,7 @@ class HomePage extends Component {
       >
         <Slider>
           <Slide index={0}>
-            <Card style={{width:'40em', height:'600px', margin:'auto', marginTop:'10px'}}>
+            <Card style={{width:'80%', height:'600px', margin:'auto', marginTop:'10px'}}>
             <CardContent style={{width:'100%'}}>
               <a class="twitter-timeline" data-width="100%" data-height="500px" href="https://twitter.com/stschoberg?ref_src=twsrc%5Etfw">Tweets by stschoberg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>      </CardContent>
             <CardActions>
@@ -72,7 +74,7 @@ class HomePage extends Component {
 
 
 
-        </div>
+        </Grid>
     )
       }
 }
