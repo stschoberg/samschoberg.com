@@ -47,7 +47,7 @@ class HomePage extends Component {
       >
         <Slider>
           <Slide index={0}>
-            <Card style={{width:'30%', height:'600px', margin:'auto', marginTop:'10px'}}>
+            <Card style={{width:'450px', height:'600px', margin:'auto', marginTop:'10px'}}>
             <CardContent style={{width:'100%'}}>
               <a class="twitter-timeline" data-width="100%" data-height="500px" href="https://twitter.com/stschoberg?ref_src=twsrc%5Etfw">Tweets by stschoberg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>      </CardContent>
             <CardActions>
