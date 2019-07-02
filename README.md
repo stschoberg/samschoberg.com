@@ -1,5 +1,5 @@
 # Welcome to my site
-This is a repository that I created to help others develop their websites in React.
+Get to know me.
 
 
 
@@ -9,4 +9,4 @@ This is a repository that I created to help others develop their websites in Rea
 
 
 
-Thanks to @Preda for the setup tutorial. (https://medium.com/@Preda/getting-started-on-building-a-personal-website-with-react-b44ee93b1710)
+Thanks to @Preda for the [setup](https://medium.com/@Preda/getting-started-on-building-a-personal-website-with-react-b44ee93b1710).
