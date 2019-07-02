@@ -18,9 +18,11 @@ class HomePage extends Component {
         <div style={{height:'100%'}}>
         <AppBar position="static" style={{textAlign: 'center', height:'100%', backgroundColor:"#005b96"}}>
         <Toolbar>
-          <Typography variant="h6" style={{flexGrow: 1}}>
+        <Typography variant="h6">College drunk.</Typography>
+          <Typography variant="h2" style={{flexGrow: 1}}>
             samschoberg
           </Typography>
+          <Typography variant="h6">Apiring developer.</Typography>
         </Toolbar>
         </AppBar>
 
