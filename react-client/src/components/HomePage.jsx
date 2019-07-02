@@ -10,7 +10,6 @@ import Button from '@material-ui/core/Button';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-
 class HomePage extends Component {
 
   constructor(props){
@@ -47,18 +46,27 @@ class HomePage extends Component {
         totalSlides={3}
       >
         <Slider>
-          <Slide index={0}>        <Card style={{width:'30%', height:'600px', margin:'20px'}}>
-      <CardContent style={{width:'100%'}}>
-      <a class="twitter-timeline" data-width="100%" data-height="500px" href="https://twitter.com/stschoberg?ref_src=twsrc%5Etfw">Tweets by stschoberg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>      </CardContent>
-      <CardActions>
-        <Button size="large">Stalk my Twitter</Button>
-      </CardActions>
-    </Card></Slide>
-          <Slide index={1}>I am the second Slide.</Slide>
+          <Slide index={0}>
+            <Card style={{width:'30%', height:'600px', margin:'auto', marginTop:'10px'}}>
+            <CardContent style={{width:'100%'}}>
+              <a class="twitter-timeline" data-width="100%" data-height="500px" href="https://twitter.com/stschoberg?ref_src=twsrc%5Etfw">Tweets by stschoberg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>      </CardContent>
+            <CardActions>
+            <Button size="large">Stalk my Twitter</Button>
+            </CardActions>
+            </Card>
+          </Slide>
+          <Slide>
+            <Card style={{width:'2em', height:'600px', margin:'auto', marginTop:'10px'}}>
+              <CardContent style={{width:'100%'}}>
+                Checkout my resume.
+              </CardContent>
+              <CardActions>
+              <Button size="large">Stalk my Twitter</Button>
+              </CardActions>
+              </Card>
+          </Slide>
           <Slide index={2}>I am the third Slide.</Slide>
         </Slider>
-        <ButtonBack>Back</ButtonBack>
-        <ButtonNext>Next</ButtonNext>
       </CarouselProvider>
 
 
