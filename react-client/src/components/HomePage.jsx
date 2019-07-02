@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Container from '@material-ui/core/Container';
 import AppBar from '@material-ui/core/AppBar';
 import Grid from '@material-ui/core/Grid';
+import { Page } from 'react-pdf';
+import { Document } from 'react-pdf/dist/entry.webpack';
+
 
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -11,7 +14,9 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import resumeImage from './resumeImage.png'
 
+const path = '/react-client/src/components/resume.pdf'
 class HomePage extends Component {
 
   constructor(props){
@@ -58,9 +63,16 @@ class HomePage extends Component {
             </Card>
           </Slide>
           <Slide>
-            <Card style={{width:'2em', height:'600px', margin:'auto', marginTop:'10px'}}>
-              <CardContent style={{width:'100%'}}>
+            <Card style={{width:'80%', height:'600px', margin:'auto', marginTop:'10px'}}>
+            <CardContent>
                 Checkout my resume.
+ 
+                <a href={path} target='_blank'><img style={{'max-width':'100%', 'max-height':'100%'}}src={resumeImage}/></a>
+
+
+
+
+
               </CardContent>
               <CardActions>
               <Button size="large">Stalk my Twitter</Button>
