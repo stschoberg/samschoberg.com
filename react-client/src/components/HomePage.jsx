@@ -4,9 +4,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Grid from '@material-ui/core/Grid';
 import { Page } from 'react-pdf';
 import { Document } from 'react-pdf/dist/entry.webpack';
-
-import { GitHubSummary } from 'react-github-summary'
-
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
@@ -75,12 +72,7 @@ class HomePage extends Component {
               </Card>
           </Slide>
           <Slide index={2}>
-          <Card style={{width:'90%', height:'600px', margin:'auto', marginTop:'10px'}}>
-
-          <CardContent>
-          <GitHubSummary username='stschoberg' width='200'/>
-          </CardContent>
-          </Card>
+            In dev
           </Slide>
         </Slider>
       </CarouselProvider>
