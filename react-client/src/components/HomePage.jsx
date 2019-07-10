@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import { Page } from 'react-pdf';
 import { Document } from 'react-pdf/dist/entry.webpack';
 
+import { GitHubSummary } from 'react-github-summary'
 
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
