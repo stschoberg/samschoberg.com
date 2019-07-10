@@ -37,7 +37,7 @@ class HomePage extends Component {
 
 
       return (
-        <Grid style={{height:'100%', width:'100%'}}>
+        <div>
         <AppBar position="static" style={{textAlign: 'center', height:'100%', backgroundColor:"#005b96"}}>
         <Toolbar>
         <Typography variant="h6">Terp.</Typography>
@@ -100,10 +100,9 @@ class HomePage extends Component {
         </Slider>
       </CarouselProvider> */}
 
+      </div>
 
 
-
-        </Grid>
     )
       }
 }
