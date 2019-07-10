@@ -37,7 +37,7 @@ class HomePage extends Component {
         <Grid style={{height:'100%', width:'100%'}}>
         <AppBar position="static" style={{textAlign: 'center', height:'100%', backgroundColor:"#005b96"}}>
         <Toolbar>
-        <Typography variant="h6">College drunk.</Typography>
+        <Typography variant="h6">Terp.</Typography>
           <Typography variant="h2" style={{flexGrow: 1}}>
             samschoberg
           </Typography>
