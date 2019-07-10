@@ -63,7 +63,7 @@ class HomePage extends Component {
             </Card>
           </Slide>
           <Slide>
-            <Card style={{width:'80%', height:'600px', margin:'auto', marginTop:'10px'}}>
+            <Card style={{width:'90%', height:'600px', margin:'auto', marginTop:'10px'}}>
             <CardContent>
                 Checkout my resume.
  
