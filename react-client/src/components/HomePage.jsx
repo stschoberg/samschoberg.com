@@ -17,6 +17,8 @@ import resumeImage from './resumeImage.png'
 const path = '/react-client/src/components/resume.pdf'
 class HomePage extends Component {
 
+
+
   constructor(props){
     super(props);
   }
@@ -28,6 +30,13 @@ class HomePage extends Component {
         slidesToShow: 1,
         slidesToScroll: 1
       };
+
+      var paper= {
+        padding: theme.spacing(2),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+      }
+
 
 
 
@@ -44,8 +53,31 @@ class HomePage extends Component {
         </AppBar>
 
 
+        <Grid container spacing={3}>
+        <Grid item xs={12}>
+          <Paper className={paper}>xs=12</Paper>
+        </Grid>
+        <Grid item xs={6}>
+          <Paper className={paper}>xs=6</Paper>
+        </Grid>
+        <Grid item xs={6}>
+          <Paper className={paper}>xs=6</Paper>
+        </Grid>
+        <Grid item xs={3}>
+          <Paper className={paper}>xs=3</Paper>
+        </Grid>
+        <Grid item xs={3}>
+          <Paper className={paper}>xs=3</Paper>
+        </Grid>
+        <Grid item xs={3}>
+          <Paper className={paper}>xs=3</Paper>
+        </Grid>
+        <Grid item xs={3}>
+          <Paper className={paper}>xs=3</Paper>
+        </Grid>
+      </Grid>
 
-        <CarouselProvider
+        {/* <CarouselProvider
         naturalSlideWidth={100}
         naturalSlideHeight={125}
         totalSlides={3}
@@ -75,7 +107,7 @@ class HomePage extends Component {
             In dev
           </Slide>
         </Slider>
-      </CarouselProvider>
+      </CarouselProvider> */}
 
 
 
