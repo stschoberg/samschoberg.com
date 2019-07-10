@@ -78,7 +78,7 @@ class HomePage extends Component {
           <Card style={{width:'90%', height:'600px', margin:'auto', marginTop:'10px'}}>
 
           <CardContent>
-          <GitHubSummary username='your-username' width='200'/>
+          <GitHubSummary username='stschoberg' width='200'/>
           </CardContent>
           </Card>
           </Slide>
