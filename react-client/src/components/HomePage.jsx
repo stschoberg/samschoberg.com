@@ -52,7 +52,7 @@ class HomePage extends Component {
         <Grid container spacing={3}>
         <Grid item xs={5}>
           <Paper >
-          <a class="twitter-timeline" data-width="90%" data-height="500px" href="https://twitter.com/stschoberg?ref_src=twsrc%5Etfw">Tweets by stschoberg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline"  href="https://twitter.com/stschoberg?ref_src=twsrc%5Etfw">Tweets by stschoberg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </Paper>
         </Grid>
         <Grid item xs={5}>
