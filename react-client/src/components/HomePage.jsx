@@ -31,11 +31,7 @@ class HomePage extends Component {
         slidesToScroll: 1
       };
 
-      var paper= {
-        padding: theme.spacing(2),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
-      }
+
 
 
 
@@ -55,25 +51,25 @@ class HomePage extends Component {
 
         <Grid container spacing={3}>
         <Grid item xs={12}>
-          <Paper className={paper}>xs=12</Paper>
+          <Paper >xs=12</Paper>
         </Grid>
         <Grid item xs={6}>
-          <Paper className={paper}>xs=6</Paper>
+          <Paper >xs=6</Paper>
         </Grid>
         <Grid item xs={6}>
-          <Paper className={paper}>xs=6</Paper>
+          <Paper >xs=6</Paper>
         </Grid>
         <Grid item xs={3}>
-          <Paper className={paper}>xs=3</Paper>
+          <Paper >xs=3</Paper>
         </Grid>
         <Grid item xs={3}>
-          <Paper className={paper}>xs=3</Paper>
+          <Paper >xs=3</Paper>
         </Grid>
         <Grid item xs={3}>
-          <Paper className={paper}>xs=3</Paper>
+          <Paper >xs=3</Paper>
         </Grid>
         <Grid item xs={3}>
-          <Paper className={paper}>xs=3</Paper>
+          <Paper >xs=3</Paper>
         </Grid>
       </Grid>
 
