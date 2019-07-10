@@ -53,7 +53,7 @@ class HomePage extends Component {
         totalSlides={3}
       >
         <Slider>
-          <Slide index={0}>
+          <Slide index={1}>
             <Card style={{width:'80%', height:'600px', margin:'auto', marginTop:'10px'}}>
             <CardContent>
               <a class="twitter-timeline" data-width="90%" data-height="500px" href="https://twitter.com/stschoberg?ref_src=twsrc%5Etfw">Tweets by stschoberg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>      </CardContent>
@@ -62,18 +62,12 @@ class HomePage extends Component {
             </CardActions>
             </Card>
           </Slide>
-          <Slide>
+          <Slide index={0}>
             <Card style={{width:'90%', height:'600px', margin:'auto', marginTop:'10px'}}>
             <CardContent>
-                Checkout my resume.
- 
-                <a href={path} target='_blank'><img style={{'max-width':'100%', 'max-height':'100%'}}src={resumeImage}/></a>
-
-
-
-
-
-              </CardContent>
+              Checkout my resume.
+              <a href={path} target='_blank'><img style={{'max-width':'100%', 'max-height':'100%'}}src={resumeImage}/></a>
+            </CardContent>
               <CardActions>
               <Button size="large">Stalk my Twitter</Button>
               </CardActions>
