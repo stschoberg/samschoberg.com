@@ -73,7 +73,14 @@ class HomePage extends Component {
               </CardActions>
               </Card>
           </Slide>
-          <Slide index={2}>I am the third Slide.</Slide>
+          <Slide index={2}>
+          <Card style={{width:'90%', height:'600px', margin:'auto', marginTop:'10px'}}>
+
+          <CardContent>
+          <GitHubSummary username='your-username' width='200'/>
+          </CardContent>
+          </Card>
+          </Slide>
         </Slider>
       </CarouselProvider>
 
