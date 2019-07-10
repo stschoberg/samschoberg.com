@@ -50,26 +50,21 @@ class HomePage extends Component {
 
 
         <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Paper >xs=12</Paper>
+        <Grid item xs={5}>
+          <Paper >
+          <a class="twitter-timeline" data-width="90%" data-height="500px" href="https://twitter.com/stschoberg?ref_src=twsrc%5Etfw">Tweets by stschoberg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </Paper>
         </Grid>
-        <Grid item xs={6}>
-          <Paper >xs=6</Paper>
+        <Grid item xs={5}>
+          <Paper > 
+            <a href={path} target='_blank'><img style={{'max-width':'100%', 'max-height':'100%'}}src={resumeImage}/></a>
+          </Paper>
         </Grid>
-        <Grid item xs={6}>
-          <Paper >xs=6</Paper>
+        <Grid item xs={5}>
+          <Paper >test3</Paper>
         </Grid>
-        <Grid item xs={3}>
-          <Paper >xs=3</Paper>
-        </Grid>
-        <Grid item xs={3}>
-          <Paper >xs=3</Paper>
-        </Grid>
-        <Grid item xs={3}>
-          <Paper >xs=3</Paper>
-        </Grid>
-        <Grid item xs={3}>
-          <Paper >xs=3</Paper>
+        <Grid item xs={5}>
+          <Paper >test4</Paper>
         </Grid>
       </Grid>
 
