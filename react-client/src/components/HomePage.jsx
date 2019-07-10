@@ -13,7 +13,7 @@ import Button from '@material-ui/core/Button';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import resumeImage from './resumeImage.png'
-
+import Paper from '@material-ui/core/Paper';
 const path = '/react-client/src/components/resume.pdf'
 class HomePage extends Component {
 
