@@ -7,13 +7,11 @@ import Footer from './Footer.jsx';
 import ReactGA from 'react-ga';
 import auth from './auth.ts'; // Sample authentication provider
 const trackingId = "UA-143618936-1"; 
-
+// Replace with your Google Analytics tracking ID
+ReactGA.initialize(trackingId);
+ReactGA.set({userId: auth.currentUserId()});
 
 class App extends Component {
-
-  // Replace with your Google Analytics tracking ID
-  ReactGA.initialize(trackingId);
-  ReactGA.set({userId: auth.currentUserId()});
   render() {
     return (
       <Router>
