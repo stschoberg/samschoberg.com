@@ -61,13 +61,8 @@ class HomePage extends Component {
             <Typography variant='h6'>Click for PDF</Typography>
           </Paper>
         </Grid>
-        <Grid item xs={5}>
-          <Paper >
-          <a href={path} target='_blank'><img style={{'max-width':'100%', 'max-height':'100%'}}src={resumeImage}/></a>
-
-          </Paper>
-        </Grid>
       </Grid>
+
       </div>
 
 
