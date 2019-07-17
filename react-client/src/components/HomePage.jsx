@@ -14,7 +14,7 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-re
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import resumeImage from './resumeImage.png'
 import Paper from '@material-ui/core/Paper';
-const path = '/react-client/src/components/resume.pdf'
+const path = 'https://schoberg-resume.s3.amazonaws.com/resume.pdf'
 class HomePage extends Component {
 
 
@@ -44,61 +44,32 @@ class HomePage extends Component {
           <Typography variant="h2" style={{flexGrow: 1}}>
             samschoberg
           </Typography>
-          <Typography variant="h6">Apiring developer.</Typography>
+          <Typography variant="h6">Apiring engineer.</Typography>
         </Toolbar>
         </AppBar>
 
-
+        <div style={{paddingLeft: '12%'}}>
         <Grid container spacing={3}>
-        <Grid item xs={5}>
+        <Grid item xs={5} style={{paddingTop:'2%', height:'100px'}}>
           <Paper >
-          <a class="twitter-timeline"  href="https://twitter.com/stschoberg?ref_src=twsrc%5Etfw">Tweets by stschoberg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" data-height='600'  href="https://twitter.com/stschoberg?ref_src=twsrc%5Etfw">Tweets by stschoberg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </Paper>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={5} style={{paddingTop:'2%', textAlign:'center'}}>
           <Paper > 
             <a href={path} target='_blank'><img style={{'max-width':'100%', 'max-height':'100%'}}src={resumeImage}/></a>
+            <Typography variant='h6'>Click for PDF</Typography>
           </Paper>
         </Grid>
         <Grid item xs={5}>
-          <Paper >test3</Paper>
-        </Grid>
-        <Grid item xs={5}>
-          <Paper >test4</Paper>
+          <Paper >
+          <a href={path} target='_blank'><img style={{'max-width':'100%', 'max-height':'100%'}}src={resumeImage}/></a>
+
+          </Paper>
         </Grid>
       </Grid>
+      </div>
 
-        {/* <CarouselProvider
-        naturalSlideWidth={100}
-        naturalSlideHeight={125}
-        totalSlides={3}
-      >
-        <Slider>
-          <Slide index={1}>
-            <Card style={{width:'80%', height:'600px', margin:'auto', marginTop:'10px'}}>
-            <CardContent>
-              <a class="twitter-timeline" data-width="90%" data-height="500px" href="https://twitter.com/stschoberg?ref_src=twsrc%5Etfw">Tweets by stschoberg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>      </CardContent>
-            <CardActions>
-            <Button size="large">Stalk my Twitter</Button>
-            </CardActions>
-            </Card>
-          </Slide>
-          <Slide index={0}>
-            <Card style={{width:'90%', height:'600px', margin:'auto', marginTop:'10px'}}>
-            <CardContent>
-              Checkout my resume.
-              <a href={path} target='_blank'><img style={{'max-width':'100%', 'max-height':'100%'}}src={resumeImage}/></a>
-            </CardContent>
-              <CardActions>
-              <Button size="large">Stalk my Twitter</Button>
-              </CardActions>
-              </Card>
-          </Slide>
-          <Slide index={2}>
-            In dev
-          </Slide>
-        </Slider>
-      </CarouselProvider> */}
 
       </div>
 
