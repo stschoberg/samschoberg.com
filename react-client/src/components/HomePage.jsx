@@ -13,12 +13,30 @@ import Button from '@material-ui/core/Button';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import resumeImage from './resumeImage.png'
+import twitterLogo from './Twitter_Social_Icon_Circle_Color.png'
+import linkedinLogo from './linkedinLogo.png'
+import resumeLogo from './resumeLogo.png'
+import NavList from './NavList.jsx';
+import ListItem from '@material-ui/core/ListItem'
+import githubLogo from './githubLogo.png'
 import Paper from '@material-ui/core/Paper';
-const path = 'https://schoberg-resume.s3.amazonaws.com/resume.pdf'
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import Icon from '@material-ui/core/Icon';
+import { withStyles } from '@material-ui/core';
+const styles = theme => ({
+  root:{
+      paddingTop: '325px'
+  },
+  icon:{
+      width: '25px',
+      marginRight: '22.5px',
+      marginLeft: '22.5px',
+      marginTop:'11px',
+      marginBottom:'11px'
+  }
+})
 class HomePage extends Component {
-
-
-
   constructor(props){
     super(props);
   }
@@ -32,46 +50,45 @@ class HomePage extends Component {
       };
 
 
-
-
+      const {classes} = this.props;
 
 
       return (
         <div style={{width:'100%', height:'100%'}}>
         <AppBar position="static" style={{textAlign: 'center', height:'100%', backgroundColor:"#005b96"}}>
         <Toolbar>
-        <Typography variant="h6">Terp.</Typography>
-          <Typography variant="h2" style={{flexGrow: 1}}>
-            samschoberg
-          </Typography>
-          <Typography variant="h6">Apiring engineer.</Typography>
+          <div style={{'margin-left': 'auto' ,'margin-right': 'auto', 'width': '40%'}}>
+     <Typography variant="h2" style={{flexGrow: 1}}>
+      <a target='_blank' href="https://twitter.com/stschoberg"><img src={twitterLogo} className={classes.icon}/></a>
+      <a target='_blank' href="https://github.com/stschoberg'"><img src={githubLogo} className={classes.icon}/></a>
+
+               stschoberg
+               <a target='_blank' href="https://www.linkedin.com/in/stschoberg/"><img src={linkedinLogo} className={classes.icon}/></a>
+      <a target='_blank' href='https://schoberg-resume.s3.amazonaws.com/resume.pdf'><img src={resumeLogo} className={classes.icon}/></a>
+             </Typography>
+
+
+               </div>
         </Toolbar>
         </AppBar>
 
-        <div style={{paddingLeft:'13%', alignContent:'center'}}>
-        <Grid container spacing={3}>
+        <div style={{'margin-left': 'auto' ,'margin-right': 'auto', 'width': '30%', marginTop:'10px'}}>
 
-        <Grid item xs={5} style={{paddingTop:'2%', textAlign:'center'}}>
-          <Paper > 
-            <a href={path} target='_blank'><img style={{'max-width':'100%', 'max-height':'100%'}}src={resumeImage}/></a>
-            <Typography variant='h6'>Click for PDF</Typography>
-          </Paper>
-        </Grid>
-        <Grid item  xs={5} style={{paddingTop:'2%', height:'100px'}}>
+
+        <Grid container spacing={1} style={{marginBottom:10}}>
           <Paper >
-          <a class="twitter-timeline" data-height='600'  href="https://twitter.com/stschoberg?ref_src=twsrc%5Etfw">Tweets by stschoberg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <Typography variant='h2'>Bio: </Typography>
+            My name is Sam, and I'm a CS/Spanish double major at the University of Maryland.
+            I'm playing around with graph theory and visualizations for social network analysis.
           </Paper>
         </Grid>
-
-      </Grid>
-
-      <Grid item  xs={5} style={{paddingTop:'2%', height:'100px'}}>
+      <Grid container spacing={1}style={{marginBottom:10}}>
           <Paper >
           <Typography variant='h2'>Cool Things Right Now: </Typography>
           <ul style={{paddingTop:'10px'}}>
             <li>Social Network Analysis</li>
               <ul>
-                <li>Started using graph databases at work and wanted to learn more about applications to social media. </li>
+                <li>blah</li>
                 <li><a href="https://www.amazon.com/Social-Network-Analysis-Startups-connections/dp/1449306462">Analyzing social networks for Startups.</a></li>
                 <li><a href="https://github.com/stschoberg/SocialNetworkAnalysis">Some code.</a></li>
 
@@ -94,8 +111,12 @@ class HomePage extends Component {
           </Paper>
         </Grid>
 
-      </div>
 
+      </div>
+      <AppBar position="static" style={{marginBottom:0,textAlign: 'center', height:'100%', backgroundColor:"#005b96"}}>
+        <Toolbar>
+        </Toolbar>
+        </AppBar>
 
       </div>
 
@@ -105,4 +126,4 @@ class HomePage extends Component {
 }
 
 
-export default HomePage;
+export default withStyles(styles)(HomePage);
