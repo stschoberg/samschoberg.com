@@ -86,13 +86,15 @@ class HomePage extends Component {
           <Paper >
           <Typography variant='h2'>Cool Things Right Now: </Typography>
           <ul style={{paddingTop:'10px'}}>
+          <li>Check out my Twitter Bot</li>
+              <ul>
+                <li><a href="https://twitter.com/RatingTrumps/">Sentiment analyzer for Trump's tweets.</a></li>
+                <li>Built with AWS Lambda and Comprehend</li>                
+              </ul>
             <li>Social Network Analysis</li>
               <ul>
-                <li>blah</li>
                 <li><a href="https://www.amazon.com/Social-Network-Analysis-Startups-connections/dp/1449306462">Analyzing social networks for Startups.</a></li>
-                <li><a href="https://github.com/stschoberg/SocialNetworkAnalysis">Some code.</a></li>
-
-                
+                <li><a href="https://github.com/stschoberg/SocialNetworkAnalysis">Some code.</a></li>                
               </ul>
             <li>Summer Books</li>
               <ul>
