@@ -1,9 +1,9 @@
 import React from 'react';
+import {Jumbotron, Container, TabContent, TabPane, Nav, NavItem, NavLink } from "reactstrap";
 import classnames from 'classnames';
 import Experience from "./Experience";
-import Education from "./Education";
+import Education from './Education'
 import profile from '../profile.json'
-import { Jumbotron, Container, TabContent, TabPane, Nav, NavItem, NavLink } from "reactstrap";
 
 class Profile extends React.Component {
   constructor(props) {
@@ -12,18 +12,19 @@ class Profile extends React.Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       activeTab: '1'
-    }
+    };
   }
 
   toggle(tab) {
     if (this.state.activeTab !== tab) {
       this.setState({
-          activeTab: tab
-        });
+        activeTab: tab
+      });
     }
   }
+
   render() {
-    return (<div>
+    return <div>
       <Jumbotron>
         <Container>
           <h1 className="display-3">{profile.title}</h1>
@@ -34,9 +35,15 @@ class Profile extends React.Component {
       <Container>
         <Nav tabs>
           <NavItem>
-            <NavLink className={classnames({ active: this.state.activeTab === '1'})}
-                      onClick={() => { this.toggle('2'); }}>
-                    Education
+            <NavLink className={classnames({ active: this.state.activeTab === '1' })}
+                     onClick={() => { this.toggle('1'); }}>
+              Experience
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink className={classnames({ active: this.state.activeTab === '2' })}
+                     onClick={() => { this.toggle('2'); }}>
+              Education
             </NavLink>
           </NavItem>
         </Nav>
@@ -49,7 +56,7 @@ class Profile extends React.Component {
           </TabPane>
         </TabContent>
       </Container>
-    </div>)
+    </div>;
   }
 }
 
