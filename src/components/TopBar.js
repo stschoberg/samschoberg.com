@@ -1,6 +1,5 @@
 import React from 'react';
-import {Container, Collapse, Navbar, NavbarToggler,
-        NavbarBrand, Nav, NavItem, NavLink} from 'reactstrap';
+import {Container, Navbar, NavbarBrand} from 'reactstrap';
 import profilePic from '../profilePic.jpg';
 
 

@@ -23,14 +23,7 @@ class Experience extends React.Component {
                         profile.experiences.map(function (experience, i) {
                             moment.locale('en');
 
-                            const totalDuration = experience.roles.reduce(function (cnt, role){
-                                const startDate = moment(role.startDate);
-                                const timeEnd = moment(role.currentJob ? new Date(): new Date(role.endDate));
-                                const duration = moment.duration(timeEnd.diff(startDate));
 
-                                return Number(cnt) + Number(duration.asMonths().toPrecision(1));
-
-                            }, 0);
 
                             return (
                                 <div key={i}>

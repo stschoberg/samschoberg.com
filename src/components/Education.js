@@ -2,7 +2,6 @@ import React from 'react';
 import {Container, Row, Col, Media} from 'reactstrap';
 import moment from 'moment';
 import profile from '../profile.json';
-import umdLogo from '../umdLogo.jpg';
 
 class Education extends React.Component {
   render() {
@@ -33,7 +32,7 @@ class Education extends React.Component {
                       "value": study.relevantCoursework
                     }
                   ].map(function (object, i) {
-                    return <div>
+                    return <div key={i}>
                       <Row>
                         <Col className="formLabel">{object.key}:</Col>
                       </Row>
