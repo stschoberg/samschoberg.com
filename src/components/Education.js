@@ -2,6 +2,7 @@ import React from 'react';
 import {Container, Row, Col, Media} from 'reactstrap';
 import moment from 'moment';
 import profile from '../profile.json';
+import umdLogo from '../umdLogo.jpg';
 
 class Education extends React.Component {
   render() {
@@ -11,8 +12,8 @@ class Education extends React.Component {
           {profile.studies.map(function (study, i) {
             return <Media key={i}>
               <Media left top href={study.url}>
-                <Media object src={study.logo} alt={study.institute}/>
-              </Media>
+                <Media object src={study.logo} alt={study.institute}/> </Media> 
+
               <Media body>
                 <Media heading>
                   <a href={study.url}>{study.institute}</a>
@@ -28,8 +29,8 @@ class Education extends React.Component {
                       "value": study.graduationYear
                     },
                     {
-                      "key": "Duration",
-                      "value": study.durationInYears + " year(s)"
+                      "key": "Relevant Coursework",
+                      "value": study.relevantCoursework
                     }
                   ].map(function (object, i) {
                     return <div>

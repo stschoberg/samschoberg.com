@@ -29,14 +29,7 @@ class TopBar extends React.Component {
 
             <span>Sam Schoberg</span>
           </NavbarBrand>
-          <NavbarToggler onClick={this.toggle}/>
-          <Collapse isOpen={this.state.isOpen} navbar>
-          <Nav className="m1-auto" navbar>
-            <NavItem>
-              <NavLink href="/profile/">Profile</NavLink>
-            </NavItem>
-          </Nav>
-          </Collapse>
+
         </Container>
       </Navbar>
 
